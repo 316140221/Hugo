@@ -1,0 +1,61 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    <div class="article-meta">
+        发布时间: {{ .Date.Format "2006-01-02 15:04" }} | 
+        分类: {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a> {{ end }} |
+        标签: {{ range .Params.tags }}<a href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+    </div>
+    
+    <!-- 文章内容前广告 -->
+    <div class="ad-banner">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+    
+    <!-- 文章内容后广告 -->
+    <div class="ad-banner">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <!-- 原文链接 -->
+    {{ if .Params.source_url }}
+    <div style="margin-top: 20px; padding: 10px; background: #f8f9fa; border-left: 4px solid #007bff;">
+        <p><strong>原文链接:</strong> <a href="{{ .Params.source_url }}" target="_blank">{{ .Params.source_url }}</a></p>
+    </div>
+    {{ end }}
+</article>
+
+<!-- 相关文章 -->
+<div style="margin-top: 40px;">
+    <h3>相关文章</h3>
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ with $related }}
+        {{ range . }}
+        <div class="article-item">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <div class="article-meta">{{ .Date.Format "01-02" }}</div>
+        </div>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

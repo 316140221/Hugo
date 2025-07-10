@@ -1,0 +1,6 @@
+name = "custom"
+license = "MIT"
+description = "Custom theme for content aggregation site"
+
+[author]
+  name = "Developer"
