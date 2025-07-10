@@ -1,0 +1,114 @@
+{{ define "main" }}
+<div class="main">
+    <div class="sidebar">
+        <!-- 侧边栏广告 -->
+        <div class="ad-banner">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="rectangle"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <div style="margin-right: 320px;">
+        <h2>{{ .Title }}</h2>
+        
+        {{ if .Content }}
+        <div class="section-description">
+            {{ .Content }}
+        </div>
+        {{ end }}
+        
+        <div class="article-list">
+            {{ range .Paginator.Pages }}
+            <article class="article-item">
+                <h3 class="article-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                <div class="article-meta">
+                    <span>{{ .Date.Format "2006-01-02 15:04" }}</span>
+                    {{ if .Params.categories }}
+                    <span> | 分类：
+                        {{ range .Params.categories }}
+                        <a href="/categories/{{ . | urlize }}/">{{ . }}</a>
+                        {{ end }}
+                    </span>
+                    {{ end }}
+                    {{ if .Params.tags }}
+                    <span> | 标签：
+                        {{ range .Params.tags }}
+                        <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+                        {{ end }}
+                    </span>
+                    {{ end }}
+                </div>
+                {{ if .Summary }}
+                <div class="article-summary">
+                    {{ .Summary }}
+                </div>
+                {{ end }}
+            </article>
+            
+            <!-- 每3篇文章插入一个广告 -->
+            {{ if eq (mod .Paginator.PageNumber 3) 0 }}
+            <div class="ad-banner" style="margin: 20px 0;">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXX"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="fluid"
+                     data-ad-layout="in-article"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+        
+        <!-- 分页导航 -->
+        {{ if gt .Paginator.TotalPages 1 }}
+        <nav class="pagination" style="margin-top: 30px; text-align: center;">
+            {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}" class="prev">← 上一页</a>
+            {{ end }}
+            
+            {{ range .Paginator.Pagers }}
+            {{ if eq . .Paginator }}
+            <span class="current">{{ .PageNumber }}</span>
+            {{ else }}
+            <a href="{{ .URL }}">{{ .PageNumber }}</a>
+            {{ end }}
+            {{ end }}
+            
+            {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}" class="next">下一页 →</a>
+            {{ end }}
+        </nav>
+        
+        <style>
+            .pagination { margin: 20px 0; }
+            .pagination a, .pagination span { 
+                display: inline-block; 
+                padding: 8px 12px; 
+                margin: 0 4px; 
+                border: 1px solid #ddd;
+                text-decoration: none;
+            }
+            .pagination a:hover { background: #f5f5f5; }
+            .pagination .current { 
+                background: #007bff; 
+                color: white; 
+                border-color: #007bff;
+            }
+        </style>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
