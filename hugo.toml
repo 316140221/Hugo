@@ -1,0 +1,40 @@
+baseURL = 'https://example.com'
+languageCode = 'zh-cn'
+title = '内容聚合网站'
+theme = 'custom'
+
+[params]
+  description = "自动化内容聚合网站"
+  keywords = "新闻, 资讯, 聚合"
+  author = "内容聚合站"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "科技"
+    url = "/tech/"
+    weight = 20
+  [[menu.main]]
+    name = "财经"
+    url = "/finance/"
+    weight = 30
+  [[menu.main]]
+    name = "娱乐"
+    url = "/entertainment/"
+    weight = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]

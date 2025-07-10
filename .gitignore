@@ -1,0 +1,6 @@
+public/
+.hugo_build.lock
+*.log
+.DS_Store
+.vscode/
+node_modules/

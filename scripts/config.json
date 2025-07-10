@@ -1,0 +1,26 @@
+{
+  "rss_feeds": {
+    "tech": [
+      "https://feeds.feedburner.com/TechCrunch",
+      "https://www.wired.com/feed/rss",
+      "https://feeds.macrumors.com/MacRumors-All",
+      "https://www.theverge.com/rss/index.xml"
+    ],
+    "finance": [
+      "https://feeds.finance.yahoo.com/rss/2.0/headline",
+      "https://feeds.bloomberg.com/markets/news.rss",
+      "https://feeds.reuters.com/news/wealth"
+    ],
+    "entertainment": [
+      "https://www.hollywoodreporter.com/feed/",
+      "https://feeds.feedburner.com/variety/headlines",
+      "https://feeds.feedburner.com/people/headlines"
+    ]
+  },
+  "max_articles_per_feed": 5,
+  "content_length_limit": 1000,
+  "schedule": {
+    "interval_minutes": 60,
+    "daily_limit": 50
+  }
+}
