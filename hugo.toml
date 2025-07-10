@@ -1,6 +1,6 @@
 baseURL = 'https://316140221.github.io/Hugo'
 languageCode = 'zh-cn'
-title = '内容聚合网站'
+title = '内容聚合站'
 theme = 'custom'
 
 [params]
