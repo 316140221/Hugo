@@ -39,37 +39,37 @@ theme = 'custom'
   # 中文菜单
   [[languages.zh.menu.main]]
     name = "首页"
-    url = "/zh/"
+    url = "/"
     weight = 10
   [[languages.zh.menu.main]]
     name = "科技"
-    url = "/zh/tech/"
+    url = "/tech/"
     weight = 20
   [[languages.zh.menu.main]]
     name = "财经"
-    url = "/zh/finance/"
+    url = "/finance/"
     weight = 30
   [[languages.zh.menu.main]]
     name = "娱乐"
-    url = "/zh/entertainment/"
+    url = "/entertainment/"
     weight = 40
     
   # 英文菜单
   [[languages.en.menu.main]]
     name = "Home"
-    url = "/en/"
+    url = "/"
     weight = 10
   [[languages.en.menu.main]]
     name = "Technology"
-    url = "/en/tech/"
+    url = "/tech/"
     weight = 20
   [[languages.en.menu.main]]
     name = "Finance"
-    url = "/en/finance/"
+    url = "/finance/"
     weight = 30
   [[languages.en.menu.main]]
     name = "Entertainment"
-    url = "/en/entertainment/"
+    url = "/entertainment/"
     weight = 40
 
 [taxonomies]
