@@ -1,5 +1,6 @@
 baseURL = 'https://316140221.github.io/Hugo'
 defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = true
 title = 'Insignificant Universe'
 theme = 'custom'
 

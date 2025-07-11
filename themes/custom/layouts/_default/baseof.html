@@ -64,19 +64,13 @@
                 <!-- 语言切换 -->
                 <li style="margin-left: auto;">
                     <div class="language-switcher">
-                        {{ if .IsTranslated }}
-                            {{ range .Translations }}
-                                <a href="{{ .Permalink }}" class="lang-link">{{ .Language.LanguageName }}</a>
+                        {{ range .Site.Languages }}
+                            {{ if ne .Lang $.Site.Language.Lang }}
+                                <a href="{{ "/" | relLangURL }}" class="lang-link" hreflang="{{ .Lang }}">{{ .LanguageName }}</a>
+                            {{ else }}
+                                <span class="current-lang">{{ .LanguageName }}</span>
                             {{ end }}
                         {{ end }}
-                        {{ if not .IsTranslated }}
-                            {{ range .Site.Languages }}
-                                {{ if ne .Lang $.Site.Language.Lang }}
-                                    <a href="{{ .Lang | relURL }}" class="lang-link">{{ .LanguageName }}</a>
-                                {{ end }}
-                            {{ end }}
-                        {{ end }}
-                        <span class="current-lang">{{ .Site.Language.LanguageName }}</span>
                     </div>
                 </li>
             </ul>
