@@ -66,12 +66,22 @@ class MultilingualContentAggregator:
     
     def create_hugo_content(self, article, category):
         """创建Hugo格式的内容"""
+        # 清理标题中的引号
+        clean_title = article['title'].replace('"', '\\"')
+        clean_summary = article['summary'].replace('"', '\\"')
+        
+        # 处理标签列表
+        tags_str = '[]'
+        if article['tags']:
+            tags_clean = [tag.replace('"', '\\"') for tag in article['tags']]
+            tags_str = '["' + '", "'.join(tags_clean) + '"]'
+        
         content = f"""---
-title: "{article['title']}"
+title: "{clean_title}"
 date: {article['date'].strftime('%Y-%m-%dT%H:%M:%S+08:00')}
 categories: ["{category}"]
-tags: {article['tags']}
-summary: "{article['summary']}"
+tags: {tags_str}
+summary: "{clean_summary}"
 source_url: "{article['source_url']}"
 ---
 
