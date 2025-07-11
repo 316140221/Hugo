@@ -1,12 +1,33 @@
 baseURL = 'https://316140221.github.io/Hugo'
-languageCode = 'zh-cn'
-title = '内容聚合站'
+defaultContentLanguage = 'zh'
+title = 'Insignificant Universe'
 theme = 'custom'
 
 [params]
-  description = "自动化内容聚合网站"
+  description = "Insignificant Universe"
   keywords = "新闻, 资讯, 聚合"
   author = "内容聚合站"
+
+[languages]
+  [languages.zh]
+    languageCode = 'zh-CN'
+    languageName = '中文'
+    title = '无关紧要的宇宙'
+    weight = 1
+    [languages.zh.params]
+      description = "自动化内容聚合网站 - 中文版"
+      keywords = "新闻, 资讯, 聚合, 科技, 财经, 娱乐"
+      author = "内容聚合站"
+    
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    title = 'Insignificant Universe'
+    weight = 2
+    [languages.en.params]
+      description = "Automated Content Aggregation Website - English Version"
+      keywords = "news, tech, finance, entertainment, aggregation"
+      author = "Content Hub"
 
 [markup]
   [markup.goldmark]
@@ -14,21 +35,40 @@ theme = 'custom'
       unsafe = true
 
 [menu]
-  [[menu.main]]
+  # 中文菜单
+  [[languages.zh.menu.main]]
     name = "首页"
-    url = "/"
+    url = "/zh/"
     weight = 10
-  [[menu.main]]
+  [[languages.zh.menu.main]]
     name = "科技"
-    url = "/tech/"
+    url = "/zh/tech/"
     weight = 20
-  [[menu.main]]
+  [[languages.zh.menu.main]]
     name = "财经"
-    url = "/finance/"
+    url = "/zh/finance/"
     weight = 30
-  [[menu.main]]
+  [[languages.zh.menu.main]]
     name = "娱乐"
-    url = "/entertainment/"
+    url = "/zh/entertainment/"
+    weight = 40
+    
+  # 英文菜单
+  [[languages.en.menu.main]]
+    name = "Home"
+    url = "/en/"
+    weight = 10
+  [[languages.en.menu.main]]
+    name = "Technology"
+    url = "/en/tech/"
+    weight = 20
+  [[languages.en.menu.main]]
+    name = "Finance"
+    url = "/en/finance/"
+    weight = 30
+  [[languages.en.menu.main]]
+    name = "Entertainment"
+    url = "/en/entertainment/"
     weight = 40
 
 [taxonomies]
