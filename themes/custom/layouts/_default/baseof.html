@@ -29,6 +29,22 @@
         .article-meta { color: #666; font-size: 14px; }
         .article-summary { margin-top: 10px; }
         .footer { background: #f8f9fa; text-align: center; padding: 20px; margin-top: 40px; }
+        .language-switcher { display: flex; align-items: center; gap: 8px; }
+        .lang-link { 
+            color: #aaa; 
+            text-decoration: none; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            transition: background-color 0.2s;
+        }
+        .lang-link:hover { background-color: #495057; color: white; }
+        .current-lang { 
+            color: white; 
+            font-weight: bold; 
+            padding: 4px 8px; 
+            background-color: #007bff; 
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -40,10 +56,23 @@
     
     <nav class="nav">
         <div class="container">
-            <ul>
+            <ul style="display: flex; align-items: center;">
                 {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
                 {{ end }}
+                
+                <!-- 语言切换 -->
+                <li style="margin-left: auto;">
+                    <div class="language-switcher">
+                        {{ range .Site.Languages }}
+                            {{ if ne .Lang $.Site.Language.Lang }}
+                                <a href="{{ $.Site.BaseURL }}/{{ .Lang }}/" class="lang-link" hreflang="{{ .Lang }}">{{ .LanguageName }}</a>
+                            {{ else }}
+                                <span class="current-lang">{{ .LanguageName }}</span>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>

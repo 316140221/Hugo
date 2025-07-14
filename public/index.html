@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容聚合网站 - 演示预览</title>
+    <style>
+        body { 
+            font-family: "Microsoft YaHei", Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #f8f9fa;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white;
+            padding: 2rem; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav { 
+            background: #343a40; 
+            margin-bottom: 20px;
+        }
+        .nav ul { 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center;
+        }
+        .nav li { 
+            margin-right: 20px; 
+        }
+        .nav a { 
+            color: white; 
+            text-decoration: none; 
+            padding: 15px 20px; 
+            display: block; 
+            transition: background 0.3s;
+        }
+        .nav a:hover {
+            background: #495057;
+        }
+        .content { 
+            display: flex;
+            gap: 20px;
+        }
+        .main { 
+            flex: 1;
+        }
+        .sidebar { 
+            width: 300px; 
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .ad-banner { 
+            text-align: center; 
+            margin: 20px 0; 
+            background: #e9ecef;
+            padding: 20px;
+            border: 2px dashed #6c757d;
+            border-radius: 8px;
+        }
+        .footer { 
+            background: #343a40; 
+            color: white;
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 40px; 
+        }
+        .stats {
+            background: #17a2b8;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🌟 内容聚合网站演示 🌟</h1>
+        <p>基于Hugo + Python自动化脚本构建</p>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">🏠 首页</a></li>
+            <li><a href="#tech">💻 科技</a></li>
+            <li><a href="#finance">💰 财经</a></li>
+            <li><a href="#entertainment">🎬 娱乐</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 顶部广告横幅 -->
+        <div class="ad-banner">
+            <h3>📢 Google AdSense 顶部横幅广告</h3>
+            <p>728x90 或 自适应横幅广告位</p>
+        </div>
+
+        <div class="content">
+            <div class="main">
+                <h2>📰 最新资讯</h2>
+                
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">沪深两市成交额突破1.5万亿 创年内新高</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-10 | 
+                分类: finance |
+                标签: A股, 成交额, 上证指数, 股市
+            </div>
+            <div style="margin-top: 10px;">
+                <p>A股成交额创年内新高，三大指数全线上涨</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">央行下调存款准备金率0.5个百分点 释放流动性约1万亿</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-09 | 
+                分类: finance |
+                标签: 央行, 降准, 流动性, 货币政策
+            </div>
+            <div style="margin-top: 10px;">
+                <p>央行降准0.5个百分点，释放流动性1万亿元支持实体经济</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">苹果发布最新iPhone 16系列：搭载A18芯片性能提升30%</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-09 | 
+                分类: tech |
+                标签: 苹果, iPhone, A18芯片, 智能手机
+            </div>
+            <div style="margin-top: 10px;">
+                <p>iPhone 16系列发布，搭载A18芯片，性能提升显著</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+                <div style="background: #f0f0f0; padding: 20px; text-align: center; margin: 20px 0; border: 1px dashed #ccc;">
+                    <h3>[Google AdSense 内容间广告]</h3>
+                    <p>728x90 横幅广告位</p>
+                </div>
+                
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">Taylor Swift时代巡演创收纪录 成史上最赚钱巡演</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-09 | 
+                分类: entertainment |
+                标签: Taylor Swift, 巡演, 收入纪录, 音乐
+            </div>
+            <div style="margin-top: 10px;">
+                <p>Taylor Swift巡演创收20亿美元，成史上最赚钱巡演</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">漫威新片《银河护卫队3》全球票房突破10亿美元</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-09 | 
+                分类: entertainment |
+                标签: 漫威, 银河护卫队, 票房, 电影
+            </div>
+            <div style="margin-top: 10px;">
+                <p>《银河护卫队3》全球票房破10亿美元，成年度票房亮点</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">比特币价格突破7万美元 创历史新高</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-09 | 
+                分类: finance |
+                标签: 比特币, 加密货币, 投资, 历史新高
+            </div>
+            <div style="margin-top: 10px;">
+                <p>比特币突破7万美元创历史新高，机构投资推动上涨</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+                <div style="background: #f0f0f0; padding: 20px; text-align: center; margin: 20px 0; border: 1px dashed #ccc;">
+                    <h3>[Google AdSense 内容间广告]</h3>
+                    <p>728x90 横幅广告位</p>
+                </div>
+                
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">漫威新片《银河护卫队3》全球票房突破10亿美元</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-08 | 
+                分类: entertainment |
+                标签: 漫威, 银河护卫队, 票房, 电影
+            </div>
+            <div style="margin-top: 10px;">
+                <p>《银河护卫队3》全球票房破10亿美元，成年度票房亮点</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">特斯拉全自动驾驶技术获得重大突破</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-07 | 
+                分类: tech |
+                标签: 特斯拉, 自动驾驶, FSD, 马斯克
+            </div>
+            <div style="margin-top: 10px;">
+                <p>特斯拉FSD技术突破，城市驾驶表现超越人类平均水平</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">网飞宣布《怪奇物语》第五季将是最终季</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-06 | 
+                分类: entertainment |
+                标签: 怪奇物语, Netflix, 最终季, 剧集
+            </div>
+            <div style="margin-top: 10px;">
+                <p>《怪奇物语》第五季确定为最终季，2024年播出</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+                <div style="background: #f0f0f0; padding: 20px; text-align: center; margin: 20px 0; border: 1px dashed #ccc;">
+                    <h3>[Google AdSense 内容间广告]</h3>
+                    <p>728x90 横幅广告位</p>
+                </div>
+                
+        <article style="border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;">
+            <h2><a href="#" style="color: #333; text-decoration: none;">特斯拉全自动驾驶技术获得重大突破</a></h2>
+            <div style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                发布时间: 2025-07-05 | 
+                分类: tech |
+                标签: 特斯拉, 自动驾驶, FSD, 马斯克
+            </div>
+            <div style="margin-top: 10px;">
+                <p>特斯拉FSD技术突破，城市驾驶表现超越人类平均水平</p>
+            </div>
+            <!-- 模拟广告位 -->
+            <div style="background: #f0f0f0; padding: 10px; text-align: center; margin: 10px 0; border: 1px dashed #ccc;">
+                [Google AdSense 广告位]
+            </div>
+        </article>
+        
+                
+                <!-- 底部广告 -->
+                <div class="ad-banner">
+                    <h3>📢 Google AdSense 底部广告</h3>
+                    <p>728x90 横幅广告位</p>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <!-- 侧边栏广告 -->
+                <div class="ad-banner">
+                    <h3>📢 侧边栏广告</h3>
+                    <p>300x250<br>中等矩形广告</p>
+                </div>
+                
+                <!-- 统计信息 -->
+                <div class="stats">
+                    <h3>📊 网站统计</h3>
+                    <p>总文章数: 17</p>
+                    <p>科技资讯: 6</p>
+                    <p>财经新闻: 5</p>
+                    <p>娱乐资讯: 6</p>
+                </div>
+                
+                <!-- 热门标签 -->
+                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                    <h3>🏷️ 热门标签</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                        <span style="background: #007bff; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">人工智能</span>
+                        <span style="background: #28a745; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">苹果</span>
+                        <span style="background: #ffc107; color: black; padding: 5px 10px; border-radius: 15px; font-size: 12px;">比特币</span>
+                        <span style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">央行</span>
+                        <span style="background: #6f42c1; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">Tesla</span>
+                    </div>
+                </div>
+                
+                <!-- 另一个侧边栏广告 -->
+                <div class="ad-banner">
+                    <h3>📢 侧边栏广告 #2</h3>
+                    <p>300x600<br>大型矩形广告</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p>© 2025 内容聚合网站. 基于Hugo + Python自动化构建</p>
+            <p>🚀 支持RSS自动抓取 | 📱 响应式设计 | 💰 Google AdSense集成</p>
+        </div>
+    </footer>
+    
+    <script>
+        // 模拟广告加载效果
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('网站加载完成！');
+            console.log('广告位已准备就绪');
+            console.log('总文章数: 17');
+        });
+    </script>
+</body>
+</html>
+        

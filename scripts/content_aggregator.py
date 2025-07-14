@@ -14,7 +14,7 @@ from pathlib import Path
 class ContentAggregator:
     def __init__(self, config_file='config.json'):
         self.config = self.load_config(config_file)
-        self.content_dir = Path('content')
+        self.content_dir = Path('../content')
         
     def load_config(self, config_file):
         """加载配置文件"""
@@ -28,19 +28,36 @@ class ContentAggregator:
         """默认配置"""
         return {
             "rss_feeds": {
-                "tech": [
-                    "https://feeds.feedburner.com/TechCrunch",
-                    "https://www.wired.com/feed/rss",
-                    "https://feeds.macrumors.com/MacRumors-All"
-                ],
-                "finance": [
-                    "https://feeds.finance.yahoo.com/rss/2.0/headline",
-                    "https://feeds.bloomberg.com/markets/news.rss"
-                ],
-                "entertainment": [
-                    "https://www.hollywoodreporter.com/feed/",
-                    "https://feeds.feedburner.com/variety/headlines"
-                ]
+                "zh": {
+                    "tech": [
+                        "https://feeds.feedburner.com/TechCrunch",
+                        "https://www.wired.com/feed/rss",
+                        "https://feeds.macrumors.com/MacRumors-All"
+                    ],
+                    "finance": [
+                        "https://feeds.finance.yahoo.com/rss/2.0/headline",
+                        "https://feeds.bloomberg.com/markets/news.rss"
+                    ],
+                    "entertainment": [
+                        "https://www.hollywoodreporter.com/feed/",
+                        "https://feeds.feedburner.com/variety/headlines"
+                    ]
+                },
+                "en": {
+                    "tech": [
+                        "https://feeds.feedburner.com/TechCrunch",
+                        "https://www.wired.com/feed/rss",
+                        "https://feeds.macrumors.com/MacRumors-All"
+                    ],
+                    "finance": [
+                        "https://feeds.finance.yahoo.com/rss/2.0/headline",
+                        "https://feeds.bloomberg.com/markets/news.rss"
+                    ],
+                    "entertainment": [
+                        "https://www.hollywoodreporter.com/feed/",
+                        "https://feeds.feedburner.com/variety/headlines"
+                    ]
+                }
             },
             "max_articles_per_feed": 5,
             "content_length_limit": 1000

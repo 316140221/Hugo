@@ -46,7 +46,7 @@ jobs:
     - name: Run content aggregation
       run: |
         cd scripts
-        python content_aggregator.py
+        python multilingual_aggregator.py
         
     - name: Build Hugo site
       run: hugo --minify
