@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p content/{tech,finance,entertainment} themes/custom/{layouts,static,assets} scripts data)",
+      "Bash(chmod +x /home/tao/testcode/scripts/build.sh)",
+      "Bash(pip install -r requirements.txt)",
+      "Bash(python3 -m pip install -r requirements.txt)",
+      "Bash(sudo apt update)",
+      "Bash(sudo apt install -y python3-pip)",
+      "Bash(cd scripts)",
+      "Bash(python3 content_aggregator.py)",
+      "Bash(python3 mock_aggregator.py)",
+      "Bash(chmod +x /home/tao/testcode/scripts/local_debug.sh)",
+      "Bash(/home/tao/testcode/scripts/local_debug.sh)",
+      "Bash(ls -la)",
+      "Bash(find content/ -name \"*.md\")",
+      "Bash(ls themes/custom/layouts/)",
+      "Bash(ls themes/custom/layouts/_default/)",
+      "Bash(cp scripts/hugo .)",
+      "Bash(./hugo version)",
+      "Bash(python3 scripts/generate_preview.py)",
+      "Bash(ls -la public/)",
+      "Bash(git init)",
+      "Bash(git config user.name \"Content Aggregator\")",
+      "Bash(git config user.email \"noreply@example.com\")",
+      "Bash(git branch -m main)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Hugo content aggregation site\n\n- Complete Hugo site structure with custom theme\n- Python content aggregation scripts (real RSS + mock)\n- GitHub Actions CI/CD pipeline\n- Google AdSense integration ready\n- Responsive design with multiple ad positions\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add README.md DEPLOY.md)",
+      "Bash(git commit -m \"Add documentation for GitHub Pages deployment\")"
+    ],
+    "deny": []
+  }
+}
