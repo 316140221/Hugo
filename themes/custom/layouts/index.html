@@ -14,8 +14,8 @@
         </div>
         
         <!-- 热门文章 -->
-        <h3>热门文章</h3>
-        {{ range first 5 (where .Site.RegularPages "Type" "in" (slice "tech" "finance" "entertainment")) }}
+        <h3>🔥 热门文章</h3>
+        {{ range first 5 (where .Site.RegularPages "Section" "in" (slice "tech" "finance" "entertainment")) }}
         <div class="article-item">
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <div class="article-meta">{{ .Date.Format "01-02" }}</div>
@@ -24,9 +24,9 @@
     </div>
     
     <div style="margin-right: 320px;">
-        <h2>最新资讯</h2>
+        <h2>📰 最新资讯</h2>
         
-        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "tech" "finance" "entertainment")) }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" (slice "tech" "finance" "entertainment")) }}
         <div class="article-list">
             {{ range $index, $page := $paginator.Pages }}
                 {{ if eq (mod $index 3) 0 }}
@@ -48,8 +48,8 @@
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </h3>
                     <div class="article-meta">
-                        {{ .Date.Format "2006-01-02 15:04" }} | 
-                        分类: {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a> {{ end }}
+                        📅 {{ .Date.Format "2006-01-02 15:04" }} | 
+                        📁 分类: {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}" style="color: #007bff;">{{ . }}</a> {{ end }}
                     </div>
                     <div class="article-summary">{{ .Summary }}</div>
                 </div>

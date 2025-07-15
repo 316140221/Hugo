@@ -3,6 +3,7 @@ defaultContentLanguage = 'zh'
 defaultContentLanguageInSubdir = true
 title = 'Insignificant Universe'
 theme = 'custom'
+paginate = 10
 
 [params]
   description = "Insignificant Universe"

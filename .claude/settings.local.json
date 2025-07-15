@@ -27,7 +27,8 @@
       "Bash(git add .)",
       "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Hugo content aggregation site\n\n- Complete Hugo site structure with custom theme\n- Python content aggregation scripts (real RSS + mock)\n- GitHub Actions CI/CD pipeline\n- Google AdSense integration ready\n- Responsive design with multiple ad positions\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git add README.md DEPLOY.md)",
-      "Bash(git commit -m \"Add documentation for GitHub Pages deployment\")"
+      "Bash(git commit -m \"Add documentation for GitHub Pages deployment\")",
+      "Bash(hugo server --bind 0.0.0.0 --port 1313 --disableFastRender)"
     ],
     "deny": []
   }
