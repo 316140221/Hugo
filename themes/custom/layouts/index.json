@@ -1,0 +1,29 @@
+{{- $pages := where .Site.RegularPages "Section" "in" (slice "tech" "finance" "entertainment") -}}
+{
+  "title": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}",
+  "baseURL": "{{ .Site.BaseURL }}",
+  "language": "{{ .Site.Language.Lang }}",
+  "updated": "{{ now.Format "2006-01-02T15:04:05Z07:00" }}",
+  "articles": [
+    {{- range $index, $page := first 50 $pages -}}
+    {{- if gt $index 0 }},{{ end }}
+    {
+      "title": {{ $page.Title | jsonify }},
+      "url": "{{ $page.Permalink }}",
+      "date": "{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}",
+      "summary": {{ $page.Summary | jsonify }},
+      "categories": [
+        {{- range $i, $cat := $page.Params.categories -}}
+        {{- if gt $i 0 }},{{ end }}{{ $cat | jsonify }}
+        {{- end -}}
+      ],
+      "tags": [
+        {{- range $i, $tag := $page.Params.tags -}}
+        {{- if gt $i 0 }},{{ end }}{{ $tag | jsonify }}
+        {{- end -}}
+      ]
+    }
+    {{- end -}}
+  ]
+}
