@@ -1,0 +1,14 @@
+---
+title: "Stock Buyers Power Biggest S&amp;P 500 Rally Since May: Markets Wrap"
+date: 2025-08-03T22:37:03+08:00
+categories: ["finance"]
+tags: []
+summary: "A renewed wave of dip buying lifted stocks, with traders sifting through solid earnings amid bets the Federal Reserve will soon cut rates. Bonds saw small moves ahead of a heavy slate of US debt sales"
+source_url: "https://www.bloomberg.com/news/articles/2025-08-03/asian-stocks-seen-lower-as-traders-pare-back-risk-markets-wrap"
+---
+
+A renewed wave of dip buying lifted stocks, with traders sifting through solid earnings amid bets the Federal Reserve will soon cut rates. Bonds saw small moves ahead of a heavy slate of US debt sales.
+
+---
+
+*来源: [原文链接](https://www.bloomberg.com/news/articles/2025-08-03/asian-stocks-seen-lower-as-traders-pare-back-risk-markets-wrap)*
