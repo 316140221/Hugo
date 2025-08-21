@@ -1,0 +1,14 @@
+---
+title: "Google Search&#8217;s AI Mode is going global and getting smarter"
+date: 2025-08-21T13:23:09+08:00
+categories: ["tech"]
+tags: ["AI", "Google", "News", "Tech"]
+summary: "Google is putting AI Mode into Search in 180 countries and territories, allowing the AI-powered search feature to expand beyond the US, UK, and India. The expansion means more people can search for to"
+source_url: "https://www.theverge.com/news/763367/google-search-ai-mode-agentic-restaurant-bookings"
+---
+
+Google is putting AI Mode into Search in 180 countries and territories, allowing the AI-powered search feature to expand beyond the US, UK, and India. The expansion means more people can search for topics using a chatbot-like interface, though it’s still only available in English. Along with a global expansion, Google revealed that it’s building [&#8230;]
+
+---
+
+*来源: [原文链接](https://www.theverge.com/news/763367/google-search-ai-mode-agentic-restaurant-bookings)*
