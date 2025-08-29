@@ -1,0 +1,14 @@
+---
+title: "Showrunner wants to turn you into a happy little content prompter for the &#8216;Netflix of AI&#8217;"
+date: 2025-08-29T20:07:22+08:00
+categories: ["tech"]
+tags: ["AI", "Entertainment", "Interview", "Report", "TV Shows"]
+summary: "As one of the cofounders behind Oculus Story Studio, Edward Saatchi knows how hard it can be to sell people on new tech that bills itself as revolutionary. Even though Story Studio snagged an Emmy for"
+source_url: "https://www.theverge.com/ai-artificial-intelligence/762594/fable-showrunner-edwatch-saatchi-interview"
+---
+
+As one of the cofounders behind Oculus Story Studio, Edward Saatchi knows how hard it can be to sell people on new tech that bills itself as revolutionary. Even though Story Studio snagged an Emmy for one of its three animated features, a general lack of public interest in VR movies led Meta to shutter [&#8230;]
+
+---
+
+*来源: [原文链接](https://www.theverge.com/ai-artificial-intelligence/762594/fable-showrunner-edwatch-saatchi-interview)*
