@@ -1,0 +1,14 @@
+---
+title: "Verge readers can get 20 percent off Nanoleaf wall lights"
+date: 2025-09-18T19:35:22+08:00
+categories: ["tech"]
+tags: ["Deals", "Smart Home", "Tech"]
+summary: "If you want a fun way to add light and color to your space, Nanoleaf’s wall lights are a great option. Ahead of Prime Big Deal Days, Nanoleaf is offering 20 percent off select products exclusively for"
+source_url: "https://www.theverge.com/tech/781437/nanoleaf-blocks-squares-playstation-portal-deal-sale"
+---
+
+If you want a fun way to add light and color to your space, Nanoleaf’s wall lights are a great option. Ahead of Prime Big Deal Days, Nanoleaf is offering 20 percent off select products exclusively for Verge readers with the promo code THEVERGE20OFF through September 20th. For instance, you can save 20 percent off [&#8230;]
+
+---
+
+*来源: [原文链接](https://www.theverge.com/tech/781437/nanoleaf-blocks-squares-playstation-portal-deal-sale)*
